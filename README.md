@@ -52,7 +52,7 @@ Note, if the `build` folder does not exist already, create it before running thi
 yarn run deploy
 ```
 
-## Clean
+## Clean install
 
 ```
 yarn run clean

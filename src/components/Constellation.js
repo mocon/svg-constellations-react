@@ -32,7 +32,7 @@ class Constellation extends Component {
                 { this.renderLines() }
                 {
                     starCoords.map((star, index) => {
-                        const randomSize = randomIntBetween(30, 60);
+                        const randomSize = randomIntBetween(20, 80);
 
                         // Render stars
                         return (

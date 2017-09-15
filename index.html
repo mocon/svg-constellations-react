@@ -1,8 +1,8 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/svg-constellations-react/manifest.json"><link rel="shortcut icon" href="/svg-constellations-react/favicon.ico"><title>Constellations</title><meta name="author" content="Myles O'Connor"><link rel="stylesheet" href="https://ds.gumgum.com/stable/theme-blue.css"><link href="/svg-constellations-react/static/css/main.e544b195.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><canvas id="sky"></canvas><div id="root"></div><script>function draw() {
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/svg-constellations-react/manifest.json"><link rel="shortcut icon" href="/svg-constellations-react/favicon.ico"><title>Constellations</title><meta name="author" content="Myles O'Connor"><link rel="stylesheet" href="https://ds.gumgum.com/stable/theme-blue.css"><link href="/svg-constellations-react/static/css/main.385e4376.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><canvas id="sky"></canvas><div id="root"></div><script>function draw() {
             const c = document.getElementById('sky');
             const ctx = c.getContext('2d');
-            const xMax = c.width = window.screen.availWidth;
-            const yMax = c.height = window.screen.availHeight;
+            const xMax = c.width = window.innerWidth;
+            const yMax = c.height = window.innerHeight;
             const hmTimes = Math.round(xMax + yMax);
 
             for (let i = 0; i <= hmTimes; i++) {
@@ -22,4 +22,4 @@
                 ctx.fillRect(randomX, randomY, randomSize, randomSize);
             }
         }
-        draw();</script><script type="text/javascript" src="/svg-constellations-react/static/js/main.05e90d3b.js"></script></body></html>
+        draw();</script><script type="text/javascript" src="/svg-constellations-react/static/js/main.cf3ebed6.js"></script></body></html>

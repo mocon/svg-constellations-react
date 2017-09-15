@@ -7,15 +7,39 @@ import './App.css';
 
 class App extends Component {
     render() {
+        const BORDER_SPACE = 50;
+        const viewport = {
+            width: window.innerWidth,
+            height: window.innerHeight
+        };
+
         return (
-            <svg viewBox="0 0 800 600" className="constellation">
+            <svg
+                className="constellation"
+                viewBox={ `0 0 ${viewport.width} ${viewport.height}` }
+            >
                 <Constellation
                     starCoords={ [
-                        { x: randomIntBetween(0, 200), y: randomIntBetween(0, 200) },
-                        { x: randomIntBetween(100, 300), y: randomIntBetween(100, 300) },
-                        { x: randomIntBetween(200, 400), y: randomIntBetween(200, 400) },
-                        { x: randomIntBetween(300, 500), y: randomIntBetween(300, 500) },
-                        { x: randomIntBetween(400, 600), y: randomIntBetween(400, 600) }
+                        {
+                            x: randomIntBetween(BORDER_SPACE, (viewport.width - BORDER_SPACE)),
+                            y: randomIntBetween(BORDER_SPACE, (viewport.height - BORDER_SPACE))
+                        },
+                        {
+                            x: randomIntBetween(BORDER_SPACE, (viewport.width - BORDER_SPACE)),
+                            y: randomIntBetween(BORDER_SPACE, (viewport.height - BORDER_SPACE))
+                        },
+                        {
+                            x: randomIntBetween(BORDER_SPACE, (viewport.width - BORDER_SPACE)),
+                            y: randomIntBetween(BORDER_SPACE, (viewport.height - BORDER_SPACE))
+                        },
+                        {
+                            x: randomIntBetween(BORDER_SPACE, (viewport.width - BORDER_SPACE)),
+                            y: randomIntBetween(BORDER_SPACE, (viewport.height - BORDER_SPACE))
+                        },
+                        {
+                            x: randomIntBetween(BORDER_SPACE, (viewport.width - BORDER_SPACE)),
+                            y: randomIntBetween(BORDER_SPACE, (viewport.height - BORDER_SPACE))
+                        }
                     ] }
                 />
             </svg>

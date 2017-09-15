@@ -43,8 +43,8 @@
         function draw() {
             const c = document.getElementById('sky');
             const ctx = c.getContext('2d');
-            const xMax = c.width = window.screen.availWidth;
-            const yMax = c.height = window.screen.availHeight;
+            const xMax = c.width = window.innerWidth;
+            const yMax = c.height = window.innerHeight;
             const hmTimes = Math.round(xMax + yMax);
 
             for (let i = 0; i <= hmTimes; i++) {

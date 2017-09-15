@@ -1,5 +1,11 @@
 # SVG Constellations with React
 
+## Installation
+
+```
+yarn
+```
+
 ## Development
 
 ```

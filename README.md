@@ -1,5 +1,7 @@
 # SVG Constellations with React
 
+A `create-react-app` with Scss, used to render `<svg>` constellations over a `canvas` sky.
+
 ## Installation
 
 ```

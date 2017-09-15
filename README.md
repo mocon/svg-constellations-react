@@ -2,6 +2,8 @@
 
 A `create-react-app` with Scss, used to render `<svg>` constellations over a `canvas` sky.
 
+Deployed to [mocon.github.io/svg-constellations-react](https://mocon.github.io/svg-constellations-react/) via `yarn run deploy`.
+
 ## Installation
 
 ```

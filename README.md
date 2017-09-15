@@ -36,6 +36,12 @@ The build is minified and the filenames include the hashes.
 
 Note, if the `build` folder does not exist already, create it before running this command.
 
+## Deploy to Github Pages
+
+```
+yarn run deploy
+```
+
 ## Clean
 
 ```

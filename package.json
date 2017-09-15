@@ -1,5 +1,6 @@
 {
   "name": "constellation-react",
+  "homepage": "https://mocon.github.io/svg-constellations-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +8,7 @@
     "react-dom": "15.6.1"
   },
   "devDependencies": {
+    "gh-pages": "1.0.0",
     "node-sass": "4.5.3",
     "npm-run-all": "4.1.1",
     "prop-types": "15.5.10",
@@ -19,6 +21,8 @@
     "start-js": "react-scripts start",
     "build": "rm -r build/ && yarn run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "clean": "rm -rf node_modules && yarn cache clean && yarn"
   }

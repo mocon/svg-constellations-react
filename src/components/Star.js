@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Star extends Component {
     render() {
@@ -34,5 +35,12 @@ class Star extends Component {
         );
     }
 }
+
+Star.propTypes = {
+    width: PropTypes.number,
+    height: PropTypes.number,
+    xPos: PropTypes.number,
+    yPos: PropTypes.number
+};
 
 export default Star;

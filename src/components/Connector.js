@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Connector extends Component {
     render() {
@@ -21,5 +22,10 @@ class Connector extends Component {
         );
     }
 }
+
+Connector.propTypes = {
+    startXy: PropTypes.array,
+    endXy: PropTypes.array
+};
 
 export default Connector;

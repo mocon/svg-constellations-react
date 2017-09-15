@@ -34,6 +34,8 @@ Builds the app for production to the `build` folder. It correctly bundles React 
 
 The build is minified and the filenames include the hashes.
 
+Note, if the `build` folder does not exist already, create it before running this command.
+
 ## Clean
 
 ```

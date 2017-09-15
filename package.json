@@ -7,14 +7,19 @@
     "react-dom": "15.6.1"
   },
   "devDependencies": {
+    "node-sass": "4.5.3",
+    "npm-run-all": "4.1.1",
     "prop-types": "15.5.10",
     "react-scripts": "1.0.13"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "yarn run build-css && node-sass src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "build": "rm -r build/ && yarn run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "clean": "rm -rf node_modules && yarn cache clean && yarn install"
+    "clean": "rm -rf node_modules && yarn cache clean && yarn"
   }
 }

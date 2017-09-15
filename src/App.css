@@ -1,52 +1,45 @@
+html,
 body {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem; }
+
+body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
 
 #sky {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: -webkit-linear-gradient(#00111e 30%, #033d5e);
-    background: -moz-linear-gradient(#00111e 30%, #033d5e);
-    background: -o-linear-gradient(#00111e 30%, #033d5e);
-    background: linear-gradient(#00111e 30%, #033d5e);
-    overflow: hidden;
-}
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(#00111e 30%, #033d5e);
+  background: -moz-linear-gradient(#00111e 30%, #033d5e);
+  background: -o-linear-gradient(#00111e 30%, #033d5e);
+  background: linear-gradient(#00111e 30%, #033d5e);
+  overflow: hidden; }
 
 .constellation {
-    position: fixed; /* absolute */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-/* SVG star */
-.star {
-    /**/
-}
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000; }
 
 .star__outer-glow {
-    fill: #f3c160;
-}
+  fill: #f3c160; }
 
 .star__inner-glow {
-    fill: #fff;
-}
+  fill: white; }
 
 .star__tail {
-    fill: #fff;
-    opacity: 0.6;
-}
+  fill: white;
+  opacity: 0.6; }
 
-/* Connecting line */
 .connector {
-    stroke: #cbf3fd;
-    stroke-width: 1.2;
-    opacity: 0.95;
-}
+  stroke: #cbf3fd;
+  stroke-width: 1.2;
+  opacity: 0.95; }
